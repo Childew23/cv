@@ -35,7 +35,8 @@ form.addEventListener('submit', (e) => {
     }
 
     if (isValid) {
-        this.submit();
+        const confirm = document.querySelector('#form-success');
+        confirm.style.display = "block";
     }
 })
 
